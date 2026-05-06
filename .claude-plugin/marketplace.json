@@ -1,0 +1,17 @@
+{
+  "name": "integral-productivity-tools",
+  "owner": {
+    "name": "Integral Productivity Tooling Team",
+    "email": "devtools@integralproductivity.com"
+  },
+  "plugins": [
+    {
+      "name": "lean-management",
+      "source": {
+	"source": "github",
+	"repo": "Integral-Productivity/lean-management"
+      },
+      "description": "Lean management support for an organization"
+    }
+  ]
+}
