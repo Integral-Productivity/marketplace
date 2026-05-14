@@ -11,6 +11,7 @@
 	"source": "github",
 	"repo": "Integral-Productivity/lean-management"
       },
+      "version": "1.0.1",
       "description": "Lean management support for an organization"
     }
   ]
