@@ -8,11 +8,20 @@
     {
       "name": "lean-management",
       "source": {
-	"source": "github",
-	"repo": "Integral-Productivity/lean-management"
+        "source": "github",
+        "repo": "Integral-Productivity/lean-management"
       },
       "version": "1.0.1",
-      "description": "Lean management support for an organization"
+      "description": "A lean management guru to help you continuously improve"
+    },
+    {
+      "name": "model-framework-integration",
+      "source": {
+        "source": "github",
+        "repo": "Integral-Productivity/model-framework-integration"
+      },
+      "version": "0.1.0",
+      "description": "Skills for integrating across major models and frameworks (Integral Theory / AQAL, Ego Development, Lean)"
     }
   ]
 }
