@@ -27,9 +27,9 @@
       "name": "holacracy",
       "source": {
         "source": "github",
-        "repo": "Integral-Productivity/holacracy-claude-plugin"
+        "repo": "Integral-Productivity/holacracy-claude-plugin",
+        "ref": "stable"
       },
-      "version": "0.1.0",
       "description": "Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector."
     }
   ]

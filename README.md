@@ -9,6 +9,8 @@ A [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/p
 | Plugin | Source | Description |
 |---|---|---|
 | `lean-management` | [Integral-Productivity/lean-management](https://github.com/Integral-Productivity/lean-management) | Lean management support for an organization |
+| `model-framework-integration` | [Integral-Productivity/model-framework-integration](https://github.com/Integral-Productivity/model-framework-integration) | Skills for integrating across major models and frameworks (Integral Theory / AQAL, Ego Development, Lean) |
+| `holacracy` | [Integral-Productivity/holacracy-claude-plugin](https://github.com/Integral-Productivity/holacracy-claude-plugin) | Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector |
 
 ## Install
 
@@ -23,8 +25,20 @@ Then restart Claude Code so the plugin's skills, commands, hooks, and MCP server
 
 ## Adding a plugin to the marketplace
 
+This marketplace publishes plugins through a `stable` release channel rather than pinning specific versions — see [`holacracy-claude-plugin/docs/adr/0002`](https://github.com/Integral-Productivity/holacracy-claude-plugin/blob/main/docs/adr/0002-use-tag-driven-stable-branch-for-marketplace-channel-publication.md) for the reasoning. To list a new plugin:
+
 1. Confirm the plugin repo is **public**. Cowork's marketplace sync runs server-side without GitHub authentication and rejects any private or internal plugin source — list internal plugins in `marketplace-internal` instead.
-2. Open a PR against this repo editing [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json).
-3. Add an entry under `plugins` with `name`, `source` (use `{ "source": "github", "repo": "<owner>/<name>" }`), `version`, and `description`.
-4. Pin `version` to a value that matches the plugin repo's `.claude-plugin/plugin.json` (or a git tag, once tagging is in place).
-5. Merge to `main` — users refresh with `/plugin marketplace update integral-productivity-tools`.
+2. Confirm the plugin repo has a `stable` branch maintained by a tag-driven promotion workflow. See [`holacracy-claude-plugin/.github/workflows/promote-stable.yml`](https://github.com/Integral-Productivity/holacracy-claude-plugin/blob/main/.github/workflows/promote-stable.yml) for the template.
+3. Open a PR against this repo editing [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json). Add an entry under `plugins` with `name`, `source` (`{ "source": "github", "repo": "<owner>/<name>", "ref": "stable" }`), and `description`. **Do not include a `version` field** — the marketplace tracks the plugin's `stable` channel; the plugin's own `.claude-plugin/plugin.json` is the source of truth for the user-visible version.
+4. Merge to `main` — users refresh with `/plugin marketplace update integral-productivity-tools`.
+
+### Release process for plugin maintainers
+
+Once a plugin is listed and the promotion workflow is wired up, a release is:
+
+1. Bump `version` in the plugin repo's `.claude-plugin/plugin.json` on a feature branch.
+2. Merge to `main`.
+3. Push tag `vX.Y.Z` matching the new version (e.g. `git tag -a v0.3.0 -m "..." && git push origin v0.3.0`).
+4. The promotion workflow verifies the tag matches `plugin.json`, then fast-forwards `stable` to the tagged commit. Users get the new release on their next `/plugin marketplace update`.
+
+Pre-release tags (`v0.3.0-rc.1`, etc.) intentionally do not advance `stable`.
