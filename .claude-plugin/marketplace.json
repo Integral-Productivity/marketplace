@@ -9,9 +9,9 @@
       "name": "lean-management",
       "source": {
         "source": "github",
-        "repo": "Integral-Productivity/lean-management"
+        "repo": "Integral-Productivity/lean-management-claude-plugin",
+        "ref": "stable"
       },
-      "version": "1.0.1",
       "description": "A lean management guru to help you continuously improve"
     },
     {
