@@ -39,6 +39,15 @@
         "repo": "Integral-Productivity/metawork-claude-plugin"
       },
       "description": "(Alpha/preview) Teach, run, set up, and coach the Meta Work methodology — structured intentional planning, perspective-maintenance, and monitoring across project, area, domain, and identity scopes."
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "ref": "aaf2453fbdfe7a15c07f11d861224f34ab4b53cb"
+      },
+      "description": "Matt Pocock's \"Skills for Real Engineers\" — composable engineering and productivity skills (diagnose, tdd, triage, to-prd, to-issues, prototype, grill-me, handoff, write-a-skill, and more)."
     }
   ]
 }
