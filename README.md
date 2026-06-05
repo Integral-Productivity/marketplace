@@ -11,6 +11,7 @@ A [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/p
 | `lean-management` | [Integral-Productivity/lean-management](https://github.com/Integral-Productivity/lean-management) | Lean management support for an organization |
 | `model-framework-integration` | [Integral-Productivity/model-framework-integration](https://github.com/Integral-Productivity/model-framework-integration) | Skills for integrating across major models and frameworks (Integral Theory / AQAL, Ego Development, Lean) |
 | `holacracy` | [Integral-Productivity/holacracy-claude-plugin](https://github.com/Integral-Productivity/holacracy-claude-plugin) | Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector |
+| `metawork` | [Integral-Productivity/metawork-claude-plugin](https://github.com/Integral-Productivity/metawork-claude-plugin) | (Alpha/preview) Teach, run, set up, and coach the Meta Work methodology across project, area, domain, and identity scopes |
 
 ## Install
 

@@ -31,6 +31,14 @@
         "ref": "stable"
       },
       "description": "Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector."
+    },
+    {
+      "name": "metawork",
+      "source": {
+        "source": "github",
+        "repo": "Integral-Productivity/metawork-claude-plugin"
+      },
+      "description": "(Alpha/preview) Teach, run, set up, and coach the Meta Work methodology — structured intentional planning, perspective-maintenance, and monitoring across project, area, domain, and identity scopes."
     }
   ]
 }
