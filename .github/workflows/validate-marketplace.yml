@@ -1,0 +1,28 @@
+name: Validate marketplace manifest
+
+# Gate every PR on `claude plugin validate` so a malformed marketplace.json
+# (bad entry shape, invalid source, schema drift) cannot reach `main`. This
+# validates the marketplace manifest itself; each listed plugin is validated in
+# its own source repo's CI (see the plugin-CI standard / devops-excellence ADR).
+#
+# `claude plugin validate` is a local, auth-free schema check, so it runs on a
+# clean runner with no secrets.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Validate marketplace manifest
+        run: claude plugin validate .claude-plugin/marketplace.json
