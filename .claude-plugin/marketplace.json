@@ -1,9 +1,6 @@
 {
   "name": "integral-productivity-tools",
-  "owner": {
-    "name": "Integral Productivity Tooling Team",
-    "email": "devtools@integralproductivity.com"
-  },
+  "owner": "Integral Productivity Tooling Team",
   "plugins": [
     {
       "name": "lean-management",
@@ -30,7 +27,7 @@
         "repo": "Integral-Productivity/holacracy-claude-plugin",
         "ref": "stable"
       },
-      "description": "Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector."
+      "description": "Engage with Holacracy \u2014 Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector."
     },
     {
       "name": "metawork",
@@ -38,7 +35,7 @@
         "source": "github",
         "repo": "Integral-Productivity/metawork-claude-plugin"
       },
-      "description": "(Alpha/preview) Teach, run, set up, and coach the Meta Work methodology — structured intentional planning, perspective-maintenance, and monitoring across project, area, domain, and identity scopes."
+      "description": "(Alpha/preview) Teach, run, set up, and coach the Meta Work methodology \u2014 structured intentional planning, perspective-maintenance, and monitoring across project, area, domain, and identity scopes."
     }
   ]
 }
