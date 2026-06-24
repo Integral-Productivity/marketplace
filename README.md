@@ -6,12 +6,7 @@ A [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/p
 
 ## Catalog
 
-| Plugin | Source | Description |
-|---|---|---|
-| `lean-management` | [Integral-Productivity/lean-management](https://github.com/Integral-Productivity/lean-management) | Lean management support for an organization |
-| `model-framework-integration` | [Integral-Productivity/model-framework-integration](https://github.com/Integral-Productivity/model-framework-integration) | Skills for integrating across major models and frameworks (Integral Theory / AQAL, Ego Development, Lean) |
-| `holacracy` | [Integral-Productivity/holacracy-claude-plugin](https://github.com/Integral-Productivity/holacracy-claude-plugin) | Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector |
-| `metawork` | [Integral-Productivity/metawork-claude-plugin](https://github.com/Integral-Productivity/metawork-claude-plugin) | (Alpha/preview) Teach, run, set up, and coach the Meta Work methodology across project, area, domain, and identity scopes |
+_The public core catalog is currently empty._ The previously listed non-core plugins have moved to Integral-Productivity's labs marketplace, and org-internal plugins live in [`Integral-Productivity/marketplace-internal`](https://github.com/Integral-Productivity/marketplace-internal). New core plugins will be listed here as they are published — see [Adding a plugin to the marketplace](#adding-a-plugin-to-the-marketplace) below.
 
 ## Install
 

@@ -4,41 +4,5 @@
     "name": "Integral Productivity Tooling Team",
     "email": "devtools@integralproductivity.com"
   },
-  "plugins": [
-    {
-      "name": "lean-management",
-      "source": {
-        "source": "github",
-        "repo": "Integral-Productivity/lean-management-claude-plugin",
-        "ref": "stable"
-      },
-      "description": "A lean management guru to help you continuously improve"
-    },
-    {
-      "name": "model-framework-integration",
-      "source": {
-        "source": "github",
-        "repo": "Integral-Productivity/model-framework-integration"
-      },
-      "version": "0.1.0",
-      "description": "Skills for integrating across major models and frameworks (Integral Theory / AQAL, Ego Development, Lean)"
-    },
-    {
-      "name": "holacracy",
-      "source": {
-        "source": "github",
-        "repo": "Integral-Productivity/holacracy-claude-plugin",
-        "ref": "stable"
-      },
-      "description": "Engage with Holacracy — Facilitator, Secretary, Lead Link, Rep Link co-pilots, a governance-aware operating frame, and the GlassFrog MCP connector."
-    },
-    {
-      "name": "metawork",
-      "source": {
-        "source": "github",
-        "repo": "Integral-Productivity/metawork-claude-plugin"
-      },
-      "description": "(Alpha/preview) Teach, run, set up, and coach the Meta Work methodology — structured intentional planning, perspective-maintenance, and monitoring across project, area, domain, and identity scopes."
-    }
-  ]
+  "plugins": []
 }
